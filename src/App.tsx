@@ -46,5 +46,5 @@ const LoginPage: React.FC = () => {
   
   }
 
-//export default App;
-export default LoginPage;
+export default App;
+//export default LoginPage;
