@@ -3,10 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import 'semantic-ui-css/semantic.min.css'
 import { Button } from 'semantic-ui-react';
-import { MyComponent } from './MyComponent';
+import { MyComponent } from './Component/MyComponent';
 import { Container } from 'semantic-ui-react';
-import Login from './Login';
-import Menu from './Menu';
 
 const App: React.FC = () => {
   return (
@@ -31,20 +29,4 @@ const App: React.FC = () => {
 );
 }
 
-const LoginPage: React.FC = () => {
-  return(
-    <div className= "Clockwork">
-    <Fragment>
-      <Menu/>
-      <div className= "MiddleCentered">
-        <Login />       
-      </div>
-    </Fragment>  
-    </div>
-    
-  );
-  
-  }
-
 export default App;
-//export default LoginPage;

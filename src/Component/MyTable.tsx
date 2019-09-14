@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Modal, Button, Table } from 'semantic-ui-react';
+import { Table } from 'semantic-ui-react';
 
 export interface IMyTableProps{
     si:number;

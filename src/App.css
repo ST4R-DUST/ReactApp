@@ -23,25 +23,6 @@
   color: #61dafb;
 }
 
-.Clockwork {
-  background-image: url('cwc.jpg') !important;
-  background-size: cover !important;
-  background-color: #282c34;
-  min-height: 100vh;
-}
-.ClockworkLink {
-  color: #ffffff;
-}
-
-.MiddleCentered{
-  width: 900px;
-  position: absolute;
-  top: 30%;
-  left: 20%;
-
-  
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
