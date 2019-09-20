@@ -1,0 +1,39 @@
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto ;
+  grid-gap: 80px 150px;
+  padding: 100px;
+}
+
+.grid-modal {
+  display: grid;
+  grid-template-columns: auto auto ;
+  grid-gap: 10px 0px;
+  padding: 0px;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #242424;
+}
+
+.card {
+  width: 40ch;
+  height: 55ch;
+  background: rgb(0, 0, 0);
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 0px 20px 30px -5px rgb(0, 0, 0);
+  transition: box-shadow 0.5s;
+  will-change: transform;
+  
+}
+
+.card:hover {
+  box-shadow: 10px 60px 100px -10px rgb(0, 0, 0);
+}

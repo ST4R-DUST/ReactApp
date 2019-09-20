@@ -4,7 +4,7 @@
 /node_modules/.cache
 /.pnp
 .pnp.js
-/src/App.tsx
+src/App.tsx
 
 # testing
 /coverage
