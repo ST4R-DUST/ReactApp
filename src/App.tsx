@@ -1,32 +1,40 @@
-import React,{Fragment} from 'react';
-import logo from './logo.svg';
-import './css/App.css';
+import React,{ Component} from 'react';
+//import './css/App.css';
 import 'semantic-ui-css/semantic.min.css'
-import { Button } from 'semantic-ui-react';
-import { MyComponent } from './Component/MyComponent';
-import { Container } from 'semantic-ui-react';
+import NavBar from './Component/NavBar';
 
-const App: React.FC = () => {
+
+
+export default class App extends Component {
+
+  render(){
+
+  let list_series = [
+      {
+        id: 1,
+        text: 'Breaking Bad',
+        years: 2014,
+      },
+      {
+        id: 2,
+        text: 'Los Sopranos',
+        years: 1998,
+      },
+      {
+        id: 3,
+        text: 'The Wire',
+        years: 1995,
+      }
+  ];
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Git Gud
-        </a>
-        
-        <MyComponent nombre='SWIT'/>
+        <NavBar list_series = {list_series}/>
       </header>
     </div>
-);
+  );
+  } 
 }
 
-export default App;
+
