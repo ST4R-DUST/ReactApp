@@ -44,7 +44,7 @@ export default class NavBar extends Component <IProps>{
             </Menu.Menu>    
         <Menu.Menu position='right'>
             <Search fluid></Search>
-            <Button inverted style={{ margin: 0 }} size='large'>Login</Button>
+            <Button inverted style={{ margin: 0 }} size='large'>Logout</Button>
         </Menu.Menu>
 
       </Menu>
