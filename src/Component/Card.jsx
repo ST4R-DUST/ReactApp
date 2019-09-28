@@ -14,7 +14,6 @@ export function Card(data)
 
   let showModal = ()=>{    
     setOpen(!open);
-    console.log("kiti");
   }
 
   //Animacion

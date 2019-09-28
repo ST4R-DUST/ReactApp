@@ -1,25 +1,27 @@
 
 import React, { Component } from 'react'
+import LoginModal from './LoginModal';
 import {
-    Menu, Breadcrumb, Dropdown, Sticky,Icon,Button,Search, DropdownMenu, DropdownItem,
+    Menu, Dropdown, Sticky,Icon,Button,Search, DropdownMenu, DropdownItem,
   } from "semantic-ui-react";
-import './NavBar.css';
+import '../css/NavBar.css';
 
 
-  interface IProps{  
-    list_series: Array<{
-      id: number,
-      text: string,
-      years: number
-    }>
-  }
+export interface IProps{  
+  list_series: Array<{
+    id: number,
+    text: string,
+    years: number
+  }>
+}
 
+export default function NavBar(props: IProps){
 
-
-export default class NavBar extends Component <IProps>{
-
-
-    render(){
+    const[open, setOpen] = React.useState(false);
+    
+    let showModal = ()=>{
+      setOpen(!open);
+    }
 
     return (
     <Sticky>
@@ -38,27 +40,21 @@ export default class NavBar extends Component <IProps>{
                     <DropdownItem>Infantil</DropdownItem>
                   </DropdownMenu>
                 </DropdownItem>  
-                  <Dropdown text='Series' options={this.props.list_series} simple item />
+                  <Dropdown text='Series' options={props.list_series} simple item />
               </DropdownMenu>
             </Dropdown>
             </Menu.Menu>    
         <Menu.Menu position='right'>
             <Search fluid></Search>
-            <Button inverted style={{ margin: 0 }} size='large'>Logout</Button>
+            <Button inverted style={{ margin: 0 }} size='large' onClick={showModal} >Login</Button>
+            <LoginModal open={open} closeModal={showModal}/>
+            
         </Menu.Menu>
 
       </Menu>
       
       </div>
-
-      <div style={{ backgroundColor:'#e5dfdf'}}>
-        <Breadcrumb>
-          <Breadcrumb.Section link>Home</Breadcrumb.Section>
-          <Breadcrumb.Divider icon='right chevron'/>
-          
-        </Breadcrumb>
-      </div>
     </Sticky>
     )
-    }
+    
 }

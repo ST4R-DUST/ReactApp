@@ -1,12 +1,12 @@
 import * as React from 'react'; 
 import { Modal, Button, Grid, Segment,Form, Header, Message} from 'semantic-ui-react';
 
-export interface IMyModalProps{
+export interface ILoginModalProps{
     open:boolean;
     closeModal? : ()=>void | undefined;
 }
 
-export function MyModal(props: IMyModalProps){
+export function LoginModal(props: ILoginModalProps){
 
     let localClose = ()=>{
         props.closeModal && props.closeModal();      
@@ -40,13 +40,13 @@ export function MyModal(props: IMyModalProps){
           />
           
           <Button color="blue" fluid size="large">
-          <a className= "ClockworkLink" href="https://www.google.com">Sign in</a>
+            Sign in
           </Button>
           
         </Form>
       </Segment>
       <Message>
-        Join the tribunal temple today! <a href="https://www.google.com">Sign Up</a>
+        Not a registered user? <a href="#">Sign Up</a>
       </Message>
     </Grid.Column>
   </Grid>
@@ -55,3 +55,5 @@ export function MyModal(props: IMyModalProps){
       </Modal>
     );
 }
+
+export default LoginModal

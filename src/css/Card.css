@@ -14,14 +14,6 @@
   padding: 0px;
 }
 
-#root {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  background: #242424;
-}
-
 .card {
   width: 40ch;
   height: 55ch;
