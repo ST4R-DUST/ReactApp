@@ -16,11 +16,27 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(82, 75, 75);
 }
 
 .App-link {
   color: #61dafb;
+}
+.App-centeredHeading{
+  text-align:center;
+  font-size: 84px;
+  color: white;
+  padding: 50px 30px 50px 30px;
+  font-family: "Courier New",monospace;
+  box-shadow: 0px 20px 30px -5px rgb(0, 0, 0);
+  background:black;
+}
+
+.App-paddedSlideshow{
+  padding: 50px 30px 5px 30px;
+}
+.App-body {
+  background: #242424;
 }
 
 @keyframes App-logo-spin {

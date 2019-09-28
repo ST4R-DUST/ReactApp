@@ -1,7 +1,7 @@
 import * as React from 'react'; 
 
 import SlideShow from 'react-image-show';
-import Covers from './data';
+import Covers from '../Model/data';
 
 export function Slideshow (){
 
